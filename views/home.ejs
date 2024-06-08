@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//ENhttp://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.4/socket.io.js" integrity="sha512-tE1z+95+lMCGwy+9PnKgUSIeHhvioC9lMlI7rLWU0Ps3XTdjRygLcy4mLuL0JAoK4TLdQEyP0yOl/9dMOqpH/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="shortcut icon" type="image/png" href="/img/icon.png"/>
+	<title>oLearn</title>
+</head>
+<style>
+	body {
+		margin: 0;
+		font-family: Gadugi;
+	}
+	.navbar {
+		overflow: hidden;
+		background-color: #f1f1f1;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		padding: 10;
+	}
+
+	.videobox {
+		padding-top: 15;
+		padding-left: 20;
+	}
+
+	.videoplayer {
+		background-color: rgb(63, 62, 62, 1.0);
+		height: 50%;
+		width: 49%;
+		
+	}
+
+	.button {
+	position: relative;
+	top: 10;
+	font-family: Gadugi;
+	font-size: 40;
+	text-align: justify;
+	color: white;
+	border-radius: 4px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+
+	}
+
+	.text {
+		border-radius: 4px;
+	}
+
+	.u-interaction {
+		display: flex;
+	}
+
+	.l-chat {
+		flex: 1;
+	}
+
+	.textbox {
+    width: 300px; /* desired width */
+    height: 200px; /* desired height */
+	}
+
+
+	.text {
+		/*rows :40;*/
+		columns: 50;
+	}
+
+</style>
+<body>
+	<div class="navbar">
+		<img src="/img/logo-no-background.png" width="120px" height="95px">
+	</div>
+
+	<div class="videobox">
+			<video src="" class="videoplayer" id="user1" autoplay="autoplay" playsinnline="playsinnline"></video>
+			<video src="" class="videoplayer" id="user2" autoplay="autoplay" playsinnline="playsinnline"></video>
+
+		<div class="u-interaction">
+			<div class="l-chat">
+				<button class="button" style="background: linear-gradient(210deg, hotpink , red);">END SESSION</button>
+				<button class="button" style="background: linear-gradient(210deg, skyblue , blue);">NEXT SESSION</button>
+			</div>
+			<div class="l-chat">
+				<div class="chatbox">
+					<div class="textbox">
+						<!--<textarea class="text" name="" id="msg-in" rows="12" cols="95" readonly></textarea>-->
+					</div>
+					<div class="text-input">
+						<input class="input" name="" id="msg-input" placeholder="Type Your Message Here" maxlength="1000" size="102"></input>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<script src="/js/home.js"></script>
+</html>
