@@ -44,7 +44,7 @@ let init = async () => {
         audio: true,
     });
     document.getElementById("user1").srcObject = localStream;
-    $.post("http://localhost:3000/get-remote-users", {omeID: omeID})
+    $.post("https://omelearn-e2c1ed012524.herokuapp.com//get-remote-users", {omeID: omeID})
     .done(function(data){
         console.log(data[0]._id);
         if(data[0]){
